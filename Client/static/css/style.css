@@ -1,0 +1,152 @@
+/*Font*/
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../assets/fonts/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset e Stili Generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'CaviarDreams', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: black;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 15px;
+}
+
+/*Lingue*/
+.lingua{
+    border-radius: 100%;
+    border-color: white;
+    color: white;
+}
+
+/* Logo */
+.navbar-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo-link {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover {
+    color: #cccccc;
+}
+
+/* Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-link:hover {
+    color: #cccccc;
+    border-bottom-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 20px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .logo-link {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
