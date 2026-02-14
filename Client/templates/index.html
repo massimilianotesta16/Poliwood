@@ -1,52 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poliwood - Home</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../static/css/style.css">
-    <!--FavIcon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!--Lingue-->
-            <!--Centro-->
-            <div>
-                <!-- Logo -->
-                <div class="navbar-logo">
-                    <a href="index.html" class="logo-link"><img src="../static/assets/img/Loghi/logo.png" alt="Logo Poliwood"></a>
-                </div>
+    {% include 'navbar.html' %}
 
-                <!-- Menu -->
-                <ul class="navbar-menu">
-                    <li class="navbar-item">
-                        <a href="index.html" class="navbar-link">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="chi-siamo.html" class="navbar-link">Chi Siamo</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="collezioni.html" class="navbar-link">Collezioni</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Contenuto principale -->
     <main>
         <div class="galleria">
-            
         </div>
     </main>
-    <!-- Bootstrap JS -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
