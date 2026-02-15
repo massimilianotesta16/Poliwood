@@ -95,6 +95,74 @@ body {
     border-bottom-color: #ffffff;
 }
 
+/*Footer*/
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.social-icons i {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons i:hover, .footer a:hover {
+    color: #cccccc;
+}
+
+.newsletter {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;    
+    display: inline-block; 
+    width: auto;
+}
+
+.newsletter .btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter .btn:hover {
+    background-color: #cccccc;  
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);

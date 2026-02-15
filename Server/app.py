@@ -26,5 +26,12 @@ def collezioni():
     # return "Pagina Collezioni in costruzione"
     return render_template('collezioni.html')
 
+@app.route('/news')
+def news():
+    # Assicurati di avere il file news.html nella cartella templates!
+    return render_template('news.html')
+
+# 3. Avvio dell'applicazione
+
 if __name__ == '__main__':
     app.run(debug=True)

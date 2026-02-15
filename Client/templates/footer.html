@@ -1,0 +1,41 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-md-start">
+                <img src="{{ url_for('static', filename='assets/img/Loghi/logo.png') }}" alt="Logo" class="footer-logo">
+            </div>
+            <div class="col-md-6 text-md-end social-icons">
+                <a href="{{ url_for('home') }}" class="footer-link"><i class="bi bi-youtube"></i></a>
+                <a href="{{ url_for('chi_siamo') }}" class="footer-link"><i class="bi bi-facebook"></i></a>
+                <a href="{{ url_for('collezioni') }}" class="footer-link"><i class="bi bi-pinterest"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-md-6 text-md-start">
+                <ul>
+                    <li><a href="{{ url_for('home') }}" class="footer-link">Home</a></li>
+                    <li><a href="{{ url_for('chi_siamo') }}" class="footer-link">Chi Siamo</a></li>
+                    <li><a href="{{ url_for('collezioni') }}" class="footer-link">Collezioni</a></li>
+                    <li><a href="{{ url_for('news') }}" class="footer-link">News</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-md-end newsletter">
+                <input type="text" class="form-control" placeholder="Nome">
+                <input type="email" class="form-control" placeholder="Email" style="margin-top: 10px;">
+                <button class="btn mt-3">Iscriviti alla newsletter</button>
+            </div>
+        </div>
+        <div>
+            <p class="text-center mt-3">&copy; 2026
+                Poliwood snc di Negro Stefania & C. - Via Bracco, 2 - 12060 BELVEDERE LANGHE (Cn) - C.F./P.Iva
+                03389190046 Tel. 0173 797050</p>
+            <p class="text-center mt-3">
+                mail: poliwood@poliwoodporte.com - <a>Informativa Privacy</a>
+                -&nbsp;<a><span style="color: white; font-size: 15px;"><i class="bi bi-lock-fill"></i></span>&nbsp;Area
+                riservata</a>
+            </p>
+        </div>
+
+    </div>
+</footer>
