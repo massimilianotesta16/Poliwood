@@ -8,28 +8,27 @@ static_dir = os.path.join(basedir, '../Client/static')
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
-# 2. Rotte (DEVONO corrispondere ai nomi usati in url_for)
+# 2. Rotte
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/chi-siamo')
-def chi_siamo():
-    # Se non hai ancora creato il file html, per ora metti solo un testo
-    # return "Pagina Chi Siamo in costruzione"
-    return render_template('chi-siamo.html') 
+@app.route('/azienda')
+def azienda():
+    return render_template('azienda.html') 
 
 @app.route('/collezioni')
 def collezioni():
-    # Se non hai ancora creato il file html, metti solo un testo
-    # return "Pagina Collezioni in costruzione"
     return render_template('collezioni.html')
 
 @app.route('/news')
 def news():
-    # Assicurati di avere il file news.html nella cartella templates!
     return render_template('news.html')
+
+@app.route('/contatti')
+def contatti():
+    return render_template('contatti.html')
 
 # 3. Avvio dell'applicazione
 

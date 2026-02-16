@@ -3,7 +3,7 @@
         <div>
             <div class="navbar-logo">
                 <a href="{{ url_for('home') }}" class="logo-link">
-                    <img src="{{ url_for('static', filename='assets/img/Loghi/logo.png') }}" alt="Logo">
+                    <img src="{{ url_for('static', filename='assets/img/Loghi/logo.png') }}" alt="Logo"style="max-height: 150px;">
                 </a>
             </div>
 
@@ -12,10 +12,16 @@
                     <a href="{{ url_for('home') }}" class="navbar-link">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="{{ url_for('chi_siamo') }}" class="navbar-link">Chi Siamo</a>
+                    <a href="{{ url_for('azienda') }}" class="navbar-link">Azienda</a>
                 </li>
                 <li class="navbar-item">
                     <a href="{{ url_for('collezioni') }}" class="navbar-link">Collezioni</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="{{ url_for('news') }}" class="navbar-link">News</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="{{ url_for('contatti') }}" class="navbar-link">Contatti</a>
                 </li>
             </ul>
         </div>
