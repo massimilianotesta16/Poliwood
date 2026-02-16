@@ -12,7 +12,14 @@
                     <a href="{{ url_for('home') }}" class="navbar-link">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="{{ url_for('azienda') }}" class="navbar-link">Azienda</a>
+                    <div class="dropdown">
+                        <a href="#" class="navbar-link">Azienda&nbsp;<i class="bi bi-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="">Chi siamo</a>
+                            <a href="">Qualità</a>
+                            <a href="">Fouri misura standard</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="navbar-item">
                     <a href="{{ url_for('collezioni') }}" class="navbar-link">Collezioni</a>
