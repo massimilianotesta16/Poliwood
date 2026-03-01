@@ -56,7 +56,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h3 class="mb-3" style="font-weight: 300; letter-spacing: 2px;">L'ARTE DEL LEGNO MASSELLO</h3>
-                    <p class="text-muted lead">
+                    <p class="text-paragrafo lead">
                         Il legno massello conserva l'essenza della materia viva. Le sue venature sono la firma di
                         un'autentica qualità artigianale.
                     </p>
@@ -65,43 +65,42 @@
         </section>
 
         <!-- Collezioni -->
-        <section class="container-fluid px-0">
-            <div class="row g-0">
-                <div class="col-md-4 position-relative overflow-hidden group-card">
-                    <img src="{{ url_for('static', filename='assets/img/Collezioni/contemporary.jpg') }}" class="w-100"
-                        style="height: 500px; object-fit: cover; filter: brightness(0.7);">
-                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
-                        <h3 class="text-uppercase" style="letter-spacing: 3px;">Contemporary</h3>
-                        <a href="{{ url_for('collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri
-                            le Collezioni</a>
-                    </div>
+        <section class="container-fluid px-0 row gx-0">
+            <div class="col-md-4 position-relative group-card">
+                <img src="{{ url_for('static', filename='assets/img/Collezioni/contemporary.jpg') }}"
+                    class="w-100 category-img">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+                    <h3 class="text-uppercase tracking-wide">Contemporary</h3>
+                    <a href="{{ url_for('collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri le
+                        Collezioni</a>
                 </div>
+            </div>
 
-                <div class="col-md-4 position-relative overflow-hidden group-card">
-                    <img src="{{ url_for('static', filename='assets/img/Collezioni/classic.jpg') }}" class="w-100"
-                        style="height: 500px; object-fit: cover; filter: brightness(0.7);">
-                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
-                        <h3 class="text-uppercase" style="letter-spacing: 3px;">Classic</h3>
-                        <a href="{{ url_for('collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri
-                            le Collezioni</a>
-                    </div>
+            <div class="col-md-4 position-relative group-card">
+                <img src="{{ url_for('static', filename='assets/img/Collezioni/classic.jpg') }}"
+                    class="w-100 category-img">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+                    <h3 class="text-uppercase tracking-wide">Classic</h3>
+                    <a href="{{ url_for('collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri le
+                        Collezioni</a>
                 </div>
+            </div>
 
-                <div class="col-md-4 position-relative overflow-hidden group-card">
-                    <img src="{{ url_for('static', filename='assets/img/Collezioni/essential.jpg') }}" class="w-100"
-                        style="height: 500px; object-fit: cover; filter: brightness(0.7);">
-                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
-                        <h3 class="text-uppercase" style="letter-spacing: 3px;">Essential</h3>
-                        <a href="{{ url_for('collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri
-                            le Collezioni</a>
-                    </div>
+            <div class="col-md-4 position-relative group-card">
+                <img src="{{ url_for('static', filename='assets/img/Collezioni/essential.jpg') }}"
+                    class="w-100 category-img">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+                    <h3 class="text-uppercase tracking-wide">Essential</h3>
+                    <a href="{{ url_for('collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri le
+                        Collezioni</a>
                 </div>
+            </div>
 
             </div>
         </section>
 
         <!-- Qualità -->
-        <section class="py-5 bg-light">
+        <section class="py-5">
             <div class="container py-5">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -110,7 +109,7 @@
                     </div>
                     <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
                         <h2 class="mb-4 text-uppercase" style="font-weight: 300;">La Cultura del Legno</h2>
-                        <p class="text-muted mb-4">
+                        <p class="text-paragrafo mb-4">
                             Ogni ambiente ha la sua anima. Selezioniamo <strong>oltre dieci essenze pregiate</strong> —
                             dal Rovere al
                             Castagno, fino al Larice Bio — ed <strong>esaltiamo la loro natura</strong> con finiture
@@ -129,15 +128,17 @@
         </section>
 
         <!-- Personalizzazioni -->
-        <section class="py-5 bg-light">
+        <section class="py-5">
             <div class="container py-5">
                 <div class="row align-items-center">
                     <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
                         <h2 class="mb-4 text-uppercase" style="font-weight: 300;">Il nostro Legno, la Vostra Firma</h2>
-                        <p class="text-muted mb-4">
+                        <p class="text-paragrafo mb-4">
                             Crediamo che i dettagli facciano la differenza. Per questo vi offriamo la libertà totale di
-                            <strong> reinterpretare le nostre collezioni</strong>: modificate le geometrie, combinate gli stili e date
-                            vita a una porta unica, <strong>cucita sartorialmente sui vostri desideri</strong>. Nessun limite alla
+                            <strong> reinterpretare le nostre collezioni</strong>: modificate le geometrie, combinate
+                            gli stili e date
+                            vita a una porta unica, <strong>cucita sartorialmente sui vostri desideri</strong>. Nessun
+                            limite alla
                             creatività.
                         </p>
                         <a href="{{ url_for('personalizzazioni') }}"

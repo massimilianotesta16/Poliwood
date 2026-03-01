@@ -9,8 +9,100 @@
 <body>
     {% include 'navbar.html' %}
 
-    <main>
-    </main>    
+    <main class="container">
+        <section class="py-5 text-center container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h3 class="mb-3" style="font-weight: 300; letter-spacing: 2px;">LE NOSTRE COLLEZIONI</h3>
+                    <p class="text-paragrafo lead">
+                        Scoprite le nostre collezioni di porte, ognuna con un design unico e materiali di alta qualità.
+                        Dalla modernità alla tradizione, ogni porta è un'opera d'arte che arricchirà il vostro spazio.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- -->
+        <section class="collections-section">
+            <div class="collections-container row">
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/next.jpg') }}" alt="Next"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">NEXT</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/top.jpg') }}" alt="Top"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">TOP</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/levissima.jpg') }}"
+                            alt="Levissima" class="collection-image">
+                    </div>
+                    <h2 class="collection-name">LEVISSIMA</h2>
+                </div>
+            </div>
+            <!-- --- -->
+            <div class="collections-container row">
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/anticate.jpg') }}" alt="Anticate"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">ANTICATE</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/falegnameria.jpg') }}"
+                            alt="Falegnameria" class="collection-image">
+                    </div>
+                    <h2 class="collection-name">FALEGNAMERIA</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/luxury.jpg') }}" alt="Luxury"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">LUXURY</h2>
+                </div>
+            </div>
+            <!-- --- -->
+            <div class="collections-container row">
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/line.jpg') }}" alt="Line"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">LINE</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/plana.jpg') }}" alt="Plana"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">PLANA</h2>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="group-card">
+                        <img src="{{ url_for('static', filename='assets/img/Collezioni/flat.jpg') }}" alt="Flat"
+                            class="collection-image">
+                    </div>
+                    <h2 class="collection-name">FLAT</h2>
+                </div>
+            </div>
+        </section>
+    </main>
 
     {% include 'footer.html' %}
 </body>
