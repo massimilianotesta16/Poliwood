@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     {% include 'navbar.html' %}
 
     <main>
@@ -21,6 +24,14 @@
                 </div>
             </div>
         </section>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-info">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
 
         <!-- --- -->
         <div class="container">
@@ -66,7 +77,7 @@
 
                 <!-- Form -->
                 <div class="col-md-6">
-                    <form>
+                    <form method="POST" action="{{ url_for('mail_route.contatti') }}">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="formbox">
@@ -144,7 +155,7 @@
         </div>
 
     </main>
-
+    {% include 'swiper.html' %}
     {% include 'footer.html' %}
 </body>
 

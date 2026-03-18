@@ -7,16 +7,18 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     {% include 'navbar.html' %}
-
-
-
     <main>
+
+        <!-- --- -->
         <div class="container-fluid px-5 mt-5">
             <div class="row pb-5">
                 <div class="col-lg-8">
                     <h1 class="display-1 fw-bold mb-0" style="letter-spacing: -3px; line-height: 0.9;">MASSELLO<br><span
-                            class="text-muted">ITALIANO</span></h1>
+                            class="text-muted">PREGIATO</span></h1>
                 </div>
                 <div class="col-lg-4 d-flex align-items-end">
                     <p class="lead text-uppercase fw-light mb-2" style="letter-spacing: 3px; font-size: 0.8rem;">
@@ -26,6 +28,7 @@
             </div>
         </div>
 
+        <!-- --- -->
         <section class="row g-0 align-items-stretch">
             <div class="col-md-6">
                 <img src="{{ url_for('static', filename='assets/img/Altre/qualita_1.jpg') }}"
@@ -44,6 +47,7 @@
             </div>
         </section>
 
+        <!-- --- -->
         <section class="row g-0 align-items-stretch">
             <div class="col-md-6 order-md-2">
                 <img src="{{ url_for('static', filename='assets/img/Altre/qualita_2.jpg') }}"
@@ -63,6 +67,7 @@
             </div>
         </section>
 
+        <!-- --- -->
         <section class="row g-0 align-items-stretch">
             <div class="col-md-6">
                 <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img"
@@ -82,13 +87,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- --- -->
         <div class="container-fluid px-5 py-3 text-end">
-        <span class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 4px;">Firmata Poliwood</span>
-    </div>
+            <span class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 4px;">Firmata Poliwood</span>
+        </div>
 
     </main>
-
-
+    {% include 'swiper.html' %}
     {% include 'footer.html' %}
 </body>
 

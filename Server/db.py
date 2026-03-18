@@ -1,9 +1,7 @@
-from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 
-db = SQLAlchemy()
-
+from app.extensions import db
 
 collezioni_finiture = db.Table('collezioni_finiture',
     db.Column('id_collezione', db.Integer, db.ForeignKey('collezioni.id_collezione'), primary_key=True),

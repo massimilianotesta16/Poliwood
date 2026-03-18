@@ -1,5 +1,5 @@
 # seed.py
-from app import app
+from Server.f import app
 from db import Utente, db, Collezione
 from werkzeug.security import generate_password_hash, check_password_hash
 

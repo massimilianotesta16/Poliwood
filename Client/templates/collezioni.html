@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     {% include 'navbar.html' %}
 
     <main class="container-fluid px-5">
@@ -26,7 +29,7 @@
             <div class="row gy-5 justify-content-center">
                 {% for collezione in collezioni %}
                 <div class="col-md-4">
-                    <a href="{{ url_for('collezione', collezione_id=collezione.id_collezione) }}"
+                    <a href="{{ url_for('main.collezione', id=collezione.id_collezione) }}"
                         class="text-decoration-none">
                         <div class="group-card">
                             <img src="{{ url_for('static', filename='assets/img/Collezioni/' ~ collezione.immagine_copertina) }}"
@@ -41,7 +44,7 @@
             </div>
         </section>
     </main>
-
+    {% include 'swiper.html' %}
     {% include 'footer.html' %}
 </body>
 

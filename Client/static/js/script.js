@@ -29,5 +29,13 @@ function animateText(row) {
     });
 }
 
+
 animateText('.up-row');
 animateText('.down-row');
+
+window.addEventListener('load', function() {
+    const sipario = document.getElementById('preloader'); 
+    sipario.style.opacity = '0';
+    
+    setTimeout(() => { sipario.style.display = 'none'; }, 500); 
+});
