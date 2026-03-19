@@ -10,7 +10,6 @@ def popola_database():
 
         print("Inserimento dati in corso...")
 
-        # Creazione di un utente admin
         admin_user1 = Utente(nome_utente='Massimiliano', password=generate_password_hash("MT03112007_S"))
         admin_user2 = Utente(nome_utente='Maurizio', password=generate_password_hash("MT04061968_F"))
         admin_user3 = Utente(nome_utente='Giuseppe', password=generate_password_hash("G17061966_F"))

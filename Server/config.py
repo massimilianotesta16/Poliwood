@@ -1,13 +1,13 @@
 import os
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback_sicuro')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = 'sqlite:///poliwood.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
-    MAIL_PORT = int(os.environ.get('MAIL_PORT', 587))
-    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() == 'true'
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'massimilianotesta16@gmail.com')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'gqll cfpr abnn dbxr')
-    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER', 'massimilianotesta16@gmail.com')
+    MAIL_SERVER = os.environ.get('MAIL_SERVER')
+    MAIL_PORT = int(os.environ.get('MAIL_PORT'))
+    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS')
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER')

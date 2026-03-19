@@ -36,7 +36,7 @@ class ModelloVariante(db.Model):
     __tablename__ = 'modelli_varianti'
     id_modello = db.Column(db.Integer, db.ForeignKey('modelli.id_modello'), primary_key=True)
     id_variante = db.Column(db.Integer, db.ForeignKey('varianti.id_variante'), primary_key=True)
-    immagine_variante = db.Column(db.String(255)) # L'attributo appeso al rombo!
+    immagine_variante = db.Column(db.String(255)) 
     
     modello = db.relationship('Modello', backref='varianti_associate')
     variante = db.relationship('Variante', backref='modelli_associati')
@@ -44,7 +44,7 @@ class ModelloVariante(db.Model):
 class Variante(db.Model):
     __tablename__ = 'varianti'
     id_variante = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    nome_variante = db.Column(db.String(100), nullable=False) # Es. "Piena", "Vetro"
+    nome_variante = db.Column(db.String(100), nullable=False)
 
 class Articolo(db.Model):
     __tablename__ = 'articoli'
