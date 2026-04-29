@@ -15,10 +15,10 @@ def popola_database():
         print("Inserimento dati in corso...")
 
         utenti = [
-            Utente(nome_utente='Massimiliano', password=generate_password_hash("MT03112007_S01")),
-            Utente(nome_utente='Maurizio', password=generate_password_hash("MT04061968_F02")),
-            Utente(nome_utente='Giuseppe', password=generate_password_hash("GT17061966_F03")),
-            Utente(nome_utente='Stefania', password=generate_password_hash("SN13031969_S04")),
+            Utente(nome_utente='Massimiliano', password=generate_password_hash("MT03112007_S")),
+            Utente(nome_utente='Maurizio', password=generate_password_hash("MT04061968_F")),
+            Utente(nome_utente='Giuseppe', password=generate_password_hash("G17061966_F")),
+            Utente(nome_utente='Stefania', password=generate_password_hash("S13031969_S")),
         ]
 
         db.session.add_all(utenti)
