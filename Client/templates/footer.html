@@ -38,15 +38,14 @@
                     <li><a href="{{ url_for('main.collezioni') }}" class="footer-link">Tutte le collezioni</a></li>
                     {% for collezione in collezioni %}
                     <li>
-                        <a href="{{ url_for('main.collezione', id=collezione.id_collezione) }}"
-                            class="footer-link">
+                        <a href="{{ url_for('main.collezione', id=collezione.id_collezione) }}" class="footer-link">
                             {{ collezione.nome_collezione }}
                         </a>
                     </li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="col-md-3 text-md-end newsletter">
+            <div class="col-md-3 text-md-end inputs inputs-footer">
                 <form>
                     <div class="formbox">
                         <input type="text" name="Nome" required>
@@ -65,12 +64,10 @@
             </div>
         </div>
         <div class="mt-5 copyright">
-            <p class="text-center mt-3">&copy; 2026
-                Poliwood snc di Negro Stefania & C. - Via Bracco, 2 - 12060 BELVEDERE LANGHE (Cn) - C.F./P.Iva
-                03389190046 Tel. 0173 797050 - mail: poliwood@poliwoodporte.com</p>
+            <p class="text-center mt-3">&copy; 2026 Poliwood snc di Negro Stefania & C. - Via Bracco, 2 - 12060 BELVEDERE LANGHE (Cn) - C.F./P.Iva 03389190046 Tel. 0173 797050 - mail: poliwood@poliwoodporte.com</p>
             <p class="text-center mt-3">
-                <a>Informativa Privacy</a>
-                -&nbsp;<a href="{{ url_for('auth.login') }}"><span style="color: white; font-size: 15px;"><i
+                <a>Informativa Privacy</a> -&nbsp;
+                <a href="{{ url_for('auth.login') }}"><span style="font-size: 15px;"><i
                             class="bi bi-lock-fill"></i></span>&nbsp;Area
                     riservata</a>
             </p>

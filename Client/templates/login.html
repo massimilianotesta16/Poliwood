@@ -13,8 +13,7 @@
     </div>
     <div class="login-wrapper">
         <div class="login-logo">
-            <img src="{{ url_for('static', filename='assets/img/Loghi/logo.jpg') }}" alt="Logo"
-                style="max-height: 120px;">
+            <img src="{{ url_for('static', filename='assets/img/Loghi/logo.jpg') }}" alt="Logo" style="max-height: 120px;">
         </div>
         <div class="login-box">
             <div class="login-header">
@@ -26,11 +25,11 @@
             {% endif %}
 
             <form method="POST" action="/login">
-                <div class="formbox">
+                <div class="formbox formbox-login">
                     <input type="text" name="username" required placeholder=" ">
                     <label>Username</label>
                 </div>
-                <div class="formbox">
+                <div class="formbox formbox-login">
                     <input type="password" name="password" required placeholder=" ">
                     <label>Password</label>
                 </div>

@@ -17,8 +17,7 @@
         <div class="container-fluid px-5 mt-5">
             <div class="row pb-5">
                 <div class="col-lg-8">
-                    <h1 class="display-1 fw-bold mb-0" style="letter-spacing: -3px; line-height: 0.9;">PROGETTO<br><span
-                            class="text-muted">LIBERO</span></h1>
+                    <h1 class="display-1 fw-bold mb-0" style="letter-spacing: -3px; line-height: 0.9;">PROGETTO<br><span class="subtitle">LIBERO</span></h1>
                 </div>
                 <div class="col-lg-4 d-flex align-items-end">
                     <p class="lead text-uppercase fw-light mb-2" style="letter-spacing: 3px; font-size: 0.8rem;">
@@ -31,18 +30,14 @@
         <!-- --- -->
         <section class="row g-0 align-items-stretch">
             <div class="col-md-6">
-                <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img"
-                    alt="no_image">
+                <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img" alt="no_image">
             </div>
-            <div class="col-md-6 d-flex align-items-center border-top border-dark">
+            <div class="col-md-6 d-flex align-items-center border-top border-light border-opacity-10">
                 <div class="p-lg-5">
                     <h2 class="section-title mb-4 text-uppercase">Il Fuorimisura Standard</h2>
                     <p class="text-paragrafo mb-4">
-                        Questo è uno dei vantaggi più esclusivi che offriamo ai nostri clienti. Sappiamo bene che
-                        nelle case i vani non sono mai tutti uguali. Per questo, per tutte le misure inferiori a 215
-                        cm di altezza e 90 cm di larghezza, realizziamo la vostra porta centimetro per centimetro
-                        senza applicare alcun sovrapprezzo. Il vostro su misura, da noi, è al prezzo di listino
-                        base.
+                        Questo è uno dei vantaggi più esclusivi che offriamo ai nostri clienti. Sappiamo bene che nelle case i vani non sono mai tutti uguali. Per questo, per tutte le misure inferiori a 215 cm di altezza e 90 cm di larghezza, realizziamo la vostra porta centimetro
+                        per centimetro senza applicare alcun sovrapprezzo. Il vostro su misura, da noi, è al prezzo di listino base.
                     </p>
                 </div>
             </div>
@@ -51,17 +46,14 @@
         <!-- --- -->
         <section class="row g-0 align-items-stretch">
             <div class="col-md-6 order-md-2">
-                <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img"
-                    alt="no_image">
+                <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img" alt="no_image">
             </div>
             <div class="col-md-6 order-md-1 d-flex align-items-center">
                 <div class="p-lg-5">
                     <h2 class="section-title mb-4 text-uppercase">Oltre le Collezioni Standard</h2>
                     <p class="text-paragrafo mb-4">
-                        Le collezioni Poliwood sono nate per ispirarvi, ma non devono per forza essere un limite. Vi
-                        offriamo la possibilità di intervenire direttamente sul design: potete richiedere di variare
-                        la disposizione degli elementi o la geometria dei pannelli. Trasformiamo le vostre
-                        specifiche in realtà, consegnandovi un modello che sia veramente e unicamente "vostro".
+                        Le collezioni Poliwood sono nate per ispirarvi, ma non devono per forza essere un limite. Vi offriamo la possibilità di intervenire direttamente sul design: potete richiedere di variare la disposizione degli elementi o la geometria dei pannelli. Trasformiamo
+                        le vostre specifiche in realtà, consegnandovi un modello che sia veramente e unicamente "vostro".
                     </p>
                 </div>
             </div>
@@ -70,17 +62,14 @@
         <!-- --- -->
         <section class="row g-0 align-items-stretch">
             <div class="col-md-6">
-                <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img"
-                    alt="no_image">
+                <img src="{{ url_for('static', filename='assets/img/no_image.png') }}" class="img-fluid feature-img" alt="no_image">
             </div>
             <div class="col-md-6 d-flex align-items-center">
                 <div class="p-lg-5">
                     <h2 class="section-title mb-4 text-uppercase">Abbinamenti Sartoriali</h2>
                     <p class="text-paragrafo mb-4">
-                        La personalizzazione non si ferma alle dimensioni e alle essenze. Vi guidiamo nella scelta
-                        dell'abbinamento perfetto tra il tipo di legno e la finitura artigianale, per assicurarci
-                        che la porta si integri in modo impeccabile con il pavimento, l'arredamento e l'anima della
-                        vostra casa.
+                        La personalizzazione non si ferma alle dimensioni e alle essenze. Vi guidiamo nella scelta dell'abbinamento perfetto tra il tipo di legno e la finitura artigianale, per assicurarci che la porta si integri in modo impeccabile con il pavimento, l'arredamento
+                        e l'anima della vostra casa.
                     </p>
                 </div>
             </div>
@@ -88,12 +77,11 @@
 
         <!-- --- -->
         <div class="container-fluid px-5 py-3 text-end">
-            <span class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 4px;">Firmata Poliwood</span>
+            <span class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 4px; opacity: 0.2;">Firmata Poliwood</span>
         </div>
 
     </main>
-    {% include 'swiper.html' %}
-    {% include 'footer.html' %}
+    {% include 'swiper.html' %} {% include 'footer.html' %}
 </body>
 
 </html>

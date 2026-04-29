@@ -18,27 +18,22 @@
                 <div class="col-md-8">
                     <h3 class="page-title mb-3">DIAMO FORMA AL VOSTRO PROGETTO</h3>
                     <p class="text-paragrafo lead">
-                        Ogni porta che esce dal nostro laboratorio è un pezzo unico, lavorato a mano. Scriveteci per
-                        parlarci delle vostre esigenze e dei vostri progetti: saremo felici di aiutarvi a realizzarli.
+                        Ogni porta che esce dal nostro laboratorio è un pezzo unico, lavorato a mano. Scriveteci per parlarci delle vostre esigenze e dei vostri progetti: saremo felici di aiutarvi a realizzarli.
                     </p>
                 </div>
             </div>
         </section>
 
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
         <div class="alert alert-info">{{ message }}</div>
-        {% endfor %}
-        {% endif %}
-        {% endwith %}
+        {% endfor %} {% endif %} {% endwith %}
 
         <!-- --- -->
         <div class="container">
-            <div class="row justify-content-center contatti">
+            <div class="row justify-content-center inputs">
 
                 <!-- Contatti -->
-                <div class="col-md-6 contatti-info">
+                <div class="col-md-6 contact-info">
                     <div>
                         <h4 class="section-title mb-4">Contatti</h4>
                         <ul class="contact-list">
@@ -66,10 +61,8 @@
                                 <span>Dal lunedì al venerdì: 9:00 - 17:00</span>
                             </li>
                         </ul>
-                        <p
-                            style="color: #666; font-style: italic; font-size: 0.9em; margin-top: -5px; padding-left: 30px; line-height: 1.4;">
-                            Vi invitiamo a contattarci per fissare un incontro:<br>
-                            saremo felici di guidarvi alla scoperta delle nostre lavorazioni.
+                        <p style="color: #c7c7c7; font-style: italic; font-size: 0.9em; margin-top: -5px; padding-left: 30px; line-height: 1.4;">
+                            Vi invitiamo a contattarci per fissare un incontro:<br> saremo felici di guidarvi alla scoperta delle nostre lavorazioni.
                         </p>
                     </div>
 
@@ -149,14 +142,12 @@
         <!-- Map Section -->
         <div class="map-section">
             <h3>Il nostro laboratorio nelle Langhe</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.954593323792!2d7.973855676862686!3d44.49009857107486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2bd221503bd73%3A0x157b7b9b3b9ad191!2sPoliwood%20Porte%20s.n.c.!5e1!3m2!1sit!2sit!4v1772033488542!5m2!1sit!2sit"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.954593323792!2d7.973855676862686!3d44.49009857107486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2bd221503bd73%3A0x157b7b9b3b9ad191!2sPoliwood%20Porte%20s.n.c.!5e1!3m2!1sit!2sit!4v1772033488542!5m2!1sit!2sit"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </main>
-    {% include 'swiper.html' %}
-    {% include 'footer.html' %}
+    {% include 'swiper.html' %} {% include 'footer.html' %}
 </body>
 
 </html>

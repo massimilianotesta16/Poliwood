@@ -2,7 +2,7 @@ from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from flask_admin.menu import MenuLink
 from flask import session, redirect, url_for
-from db import db, Collezione, Modello, Finitura, Variante, Articolo, Utente
+from db import db, Collezione, Modello, Finitura, VarianteModello as Variante, Articolo, Utente
 from wtforms import PasswordField
 
 class SecureModelView(ModelView):
