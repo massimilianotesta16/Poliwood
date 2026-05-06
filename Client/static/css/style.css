@@ -1130,3 +1130,245 @@ body {
         height: auto;
     }
 }
+
+
+/* ============================================================
+   RESPONSIVE ADDITIONS — aggiunte senza modificare l'esistente
+   ============================================================ */
+
+
+/* --- Utilità generali --- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* --- Testi hero: fluidità tra 768 e desktop --- */
+
+.up-row,
+.down-row {
+    font-size: clamp(28px, 5vw, 60px);
+}
+
+
+/* --- Titolo display-1 sulle pagine interne (chi-siamo, qualità, ecc.) --- */
+
+.display-1 {
+    font-size: clamp(2.5rem, 8vw, 5.5rem) !important;
+    letter-spacing: clamp(-1px, -0.4vw, -3px) !important;
+}
+
+
+/* --- Testo paragrafo leggermente ridotto su mobile --- */
+
+@media (max-width: 576px) {
+    .text-paragrafo {
+        font-size: 17px;
+    }
+}
+
+
+/* --- Navbar logo: limita altezza su schermi piccoli --- */
+
+@media (max-width: 576px) {
+    .navbar-logo-container a img {
+        max-height: 80px !important;
+    }
+}
+
+
+/* --- Footer logo: troppo largo su mobile --- */
+
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 200px;
+    }
+    .social-icons {
+        justify-content: center;
+        padding-right: 0 !important;
+        margin-top: 12px;
+    }
+}
+
+
+/* --- Footer: colonne impilate su mobile --- */
+
+@media (max-width: 768px) {
+    .footer .row>[class^="col"] {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .footer-list ul {
+        border-left: none;
+        padding-left: 0;
+    }
+    .inputs.inputs-footer {
+        align-items: center;
+    }
+    .formbox {
+        min-width: 0;
+        width: 100%;
+    }
+    .inputs form button {
+        width: 100%;
+    }
+}
+
+
+/* --- Sezioni con px-5: troppo padding su mobile --- */
+
+@media (max-width: 768px) {
+    .container-fluid.px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+
+/* --- Feature image: altezza fissa → adattabile su mobile --- */
+
+@media (max-width: 768px) {
+    .feature-img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-img {
+        height: 220px;
+    }
+}
+
+
+/* --- Sezioni row g-0 (chi-siamo, qualità, personalizzazioni):
+       su mobile l'immagine va sopra, il testo sotto con padding decente --- */
+
+@media (max-width: 767px) {
+    .row.g-0.align-items-stretch>.col-md-6 {
+        width: 100%;
+    }
+    .row.g-0.align-items-stretch>.col-md-6 .p-lg-5 {
+        padding: 1.5rem !important;
+    }
+    /* Ripristina l'ordine visivo su mobile (immagine sempre prima) */
+    .row.g-0.align-items-stretch>.col-md-6.order-md-2 {
+        order: -1 !important;
+    }
+    .row.g-0.align-items-stretch>.col-md-6.order-md-1 {
+        order: 0 !important;
+    }
+}
+
+
+/* --- collections-cta: padding eccessivo su mobile --- */
+
+@media (max-width: 768px) {
+    .collections-cta {
+        padding: 60px 20px;
+    }
+    .collections-cta-tagline {
+        margin-bottom: 36px;
+        letter-spacing: 4px;
+    }
+}
+
+
+/* --- Contatti: form e info affiancati su desktop, impilati su mobile --- */
+
+@media (max-width: 767px) {
+    .inputs.justify-content-center {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 1rem;
+    }
+    .contact-info {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* --- Map section: titolo visibile, iframe leggibile su mobile --- */
+
+@media (max-width: 768px) {
+    .map-section {
+        height: 220px;
+        margin-top: 30px;
+    }
+    .map-section h3 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* --- Collezioni hero: già gestita a 768px, aggiunta per tablet (768-1024) --- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .collections-hero {
+        padding-right: 20px;
+        height: calc(100vh - 122px);
+    }
+    .collections-menu {
+        width: 180px;
+        padding-left: 20px;
+    }
+    .description h2 {
+        font-size: 0.75rem;
+    }
+    .description p {
+        font-size: 0.75rem;
+    }
+    .collection-title {
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+    }
+}
+
+
+/* --- Hero Swiper: altezza su mobile --- */
+
+@media (max-width: 576px) {
+    .heroSwiper {
+        height: 65vh;
+        max-height: 500px;
+    }
+}
+
+
+/* --- Index: sezioni qualità/personalizzazioni con px-5 e py-5 --- */
+
+@media (max-width: 768px) {
+    .container-fluid.px-5.py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    .container-fluid.px-5.py-5 section {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+}
+
+
+/* --- Login: form centrato e leggibile su mobile --- */
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 24px 20px;
+        max-width: 95vw;
+    }
+}
+
+
+/* --- Language selector: non va fuori schermo su mobile molto stretto --- */
+
+@media (max-width: 360px) {
+    .language-selector {
+        right: 8px;
+        font-size: 10px;
+    }
+    .language-selector .lang-sep {
+        margin: 0 4px;
+    }
+}
