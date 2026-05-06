@@ -64,44 +64,34 @@
                 <div class="col-md-8">
                     <h3 class="page-title mb-3">L'ARTE DEL LEGNO MASSELLO</h3>
                     <p class="text-paragrafo lead">
-                        Il legno massello conserva l'essenza della materia viva. Le sue venature sono la firma di
-                        un'autentica qualità artigianale.
+                        Il legno massello conserva l'essenza della materia viva. Le sue venature sono la firma di un'autentica qualità artigianale.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- Collezioni -->
-        <section class="container-fluid px-0 row gx-0">
-            <div class="col-md-4 position-relative group-card">
-                <img src="{{ url_for('static', filename='assets/img/Collezioni/contemporary.jpg') }}"
-                    class="w-100 category-img img-contemporary">
-                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
-                    <h3 class="text-uppercase tracking-wide">Contemporary</h3>
-                    <a href="{{ url_for('main.collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri le
-                        Collezioni</a>
+        <section class="collections-cta">
+            <p class="collections-cta-tagline">TRE COLLEZIONI. UNA FILOSOFIA.</p>
+            <div class="collections-cta-stats">
+                <div class="cta-stat">
+                    <span class="cta-number">03</span>
+                    <span class="cta-label">Collezioni</span>
+                </div>
+                <div class="cta-divider"></div>
+                <div class="cta-stat">
+                    <span class="cta-number">10+</span>
+                    <span class="cta-label">Essenze pregiate</span>
+                </div>
+                <div class="cta-divider"></div>
+                <div class="cta-stat">
+                    <span class="cta-number">&infin;</span>
+                    <span class="cta-label">Combinazioni</span>
                 </div>
             </div>
-
-            <div class="col-md-4 position-relative group-card">
-                <img src="{{ url_for('static', filename='assets/img/Collezioni/classic.jpg') }}"
-                    class="w-100 category-img img-classic">
-                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
-                    <h3 class="text-uppercase tracking-wide">Classic</h3>
-                    <a href="{{ url_for('main.collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri le
-                        Collezioni</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 position-relative group-card">
-                <img src="{{ url_for('static', filename='assets/img/Collezioni/essential.jpg') }}"
-                    class="w-100 category-img img-essential">
-                <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
-                    <h3 class="text-uppercase tracking-wide">Essential</h3>
-                    <a href="{{ url_for('main.collezioni') }}" class="btn btn-outline-light mt-3 rounded-0 px-4">Scopri le
-                        Collezioni</a>
-                </div>
-            </div>
+            <a href="{{ url_for('main.collezioni') }}" class="text-decoration-none animated-link pb-1 fw-bold text-uppercase">
+                ESPLORA LE COLLEZIONI <span>&rarr;</span>
+            </a>
         </section>
 
         <!-- Qualità -->
@@ -109,23 +99,16 @@
             <section class="py-5">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="{{ url_for('static', filename='assets/img/Altre/lavorazione.jpg') }}"
-                            class="img-fluid shadow-lg feature-img" alt="Lavorazione Legno">
+                        <img src="{{ url_for('static', filename='assets/img/Altre/lavorazione.jpg') }}" class="img-fluid shadow-lg feature-img" alt="Lavorazione Legno">
                     </div>
                     <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
                         <h2 class="section-title mb-4 text-uppercase">La Cultura del Legno</h2>
                         <p class="text-paragrafo mb-4">
                             Ogni ambiente ha la sua anima. Selezioniamo <strong>oltre dieci essenze
-                                pregiate</strong> —
-                            dal Rovere al
-                            Castagno, fino al Larice Bio — ed <strong>esaltiamo la loro natura</strong> con finiture
-                            speciali e
-                            lavorazioni puramente artigianali, come spazzolature e cerature. Una dedizione assoluta
-                            alla
-                            materia prima.
+                                pregiate</strong> — dal Rovere al Castagno, fino al Larice Bio — ed <strong>esaltiamo la loro natura</strong> con finiture speciali e lavorazioni puramente artigianali, come spazzolature e cerature. Una dedizione assoluta
+                            alla materia prima.
                         </p>
-                        <a href="{{ url_for('main.qualita') }}"
-                            class="text-decoration-none animated-link pb-1 fw-bold text-uppercase">
+                        <a href="{{ url_for('main.qualita') }}" class="text-decoration-none animated-link pb-1 fw-bold text-uppercase">
                             SCOPRI LA NOSTRA QUALITÀ <span>&rarr;</span>
                         </a>
                     </div>
@@ -136,24 +119,15 @@
             <section class="py-5">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2">
-                        <img src="{{ url_for('static', filename='assets/img/Ambientazioni/5.jpg') }}"
-                            class="img-fluid shadow-lg feature-img" alt="Lavorazione Legno">
+                        <img src="{{ url_for('static', filename='assets/img/Ambientazioni/5.jpg') }}" class="img-fluid shadow-lg feature-img" alt="Lavorazione Legno">
                     </div>
                     <div class="col-md-6 order-md-1 ps-md-5 mt-4 mt-md-0">
                         <h2 class="section-title mb-4 text-uppercase">Il nostro Legno, la Vostra Firma</h2>
                         <p class="text-paragrafo mb-4">
-                            Crediamo che i dettagli facciano la differenza. Per questo vi offriamo la libertà totale
-                            di
-                            <strong> reinterpretare le nostre collezioni</strong>: modificate le geometrie,
-                            combinate
-                            gli stili e date
-                            vita a una porta unica, <strong>cucita sartorialmente sui vostri desideri</strong>.
-                            Nessun
-                            limite alla
-                            creatività.
+                            Crediamo che i dettagli facciano la differenza. Per questo vi offriamo la libertà totale di
+                            <strong> reinterpretare le nostre collezioni</strong>: modificate le geometrie, combinate gli stili e date vita a una porta unica, <strong>cucita sartorialmente sui vostri desideri</strong>. Nessun limite alla creatività.
                         </p>
-                        <a href="{{ url_for('main.personalizzazioni') }}"
-                            class="text-decoration-none animated-link pb-1 fw-bold text-uppercase">
+                        <a href="{{ url_for('main.personalizzazioni') }}" class="text-decoration-none animated-link pb-1 fw-bold text-uppercase">
                             SCOPRI LE PERSONALIZZAZIONI <span>&rarr;</span>
                         </a>
                     </div>
@@ -162,8 +136,7 @@
         </div>
 
     </main>
-    {% include 'swiper.html' %}
-    {% include 'footer.html' %}
+    {% include 'swiper.html' %} {% include 'footer.html' %}
 </body>
 
 </html>

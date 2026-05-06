@@ -2,7 +2,7 @@
 <html lang="it">
 
 <head>
-    <title>Poliwood - Collezioni</title>
+    <title>Poliwood - Collections</title>
     {% include 'base.html' %}
 </head>
 
@@ -12,40 +12,81 @@
     </div>
     {% include 'navbar.html' %}
 
-    <main class="container-fluid px-5">
-        <section class="py-5 text-center container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h3 class="page-title mb-4">LE NOSTRE COLLEZIONI</h3>
-                    <p class="text-paragrafo lead">
-                        Scoprite le nostre collezioni di porte, ognuna con un design unico e materiali di alta qualità.
-                        Dalla modernità alla tradizione, ogni porta è un'opera d'arte che arricchirà il vostro spazio.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <main>
+        <section class="collections-hero">
+            <div class="collections-grid">
 
-        <section class="collections-section mb-5">
-            <div class="row gy-5 justify-content-center">
-                {% for collezione in collezioni %}
-                <div class="col-md-4">
-                    <a href="{{ url_for('main.collezione', id=collezione.id_collezione) }}"
-                        class="text-decoration-none">
-                        <div class="group-card">
-                            <img src="{{ url_for('static', filename='assets/img/Collezioni/' ~ collezione.immagine_copertina) }}"
-                                alt="{{ collezione.nome_collezione }}" class="collection-image">
+                <div class="images-grid">
+
+                    <!-- CLASSIC -->
+                    <div class="img-col" onmouseenter="showDesc('classic')" onmouseleave="showDesc('default')">
+                        <a href="{{ url_for('main.collezione', id=1) }}" class="main-link">
+                            <img src="{{ url_for('static', filename='assets/img/Collezioni/classic.jpg') }}" alt="Classic Collection">
+                        </a>
+                        <span class="collection-title">CLASSIC</span>
+                        <div class="sub-collections">
+                            <a href="{{ url_for('main.collezione', id=1) }}">TOP</a>
+                            <a href="{{ url_for('main.collezione', id=1) }}">FALEGNAMERIA</a>
+                            <a href="{{ url_for('main.collezione', id=1) }}">LUXURY</a>
                         </div>
-                        <h2 class="collection-name">{{ collezione.nome_collezione }}</h2>
-                    </a>
+                    </div>
+
+                    <!-- CONTEMPORARY -->
+                    <div class="img-col" onmouseenter="showDesc('contemporary')" onmouseleave="showDesc('default')">
+                        <a href="{{ url_for('main.collezione', id=2) }}" class="main-link">
+                            <img src="{{ url_for('static', filename='assets/img/Collezioni/contemporary.jpg') }}" alt="Contemporary Collection">
+                        </a>
+                        <span class="collection-title">CONTEMPORARY</span>
+                        <div class="sub-collections">
+                            <a href="{{ url_for('main.collezione', id=2) }}">NEXT</a>
+                            <a href="{{ url_for('main.collezione', id=2) }}">PLANA</a>
+                            <a href="{{ url_for('main.collezione', id=2) }}">LINE</a>
+                            <a href="{{ url_for('main.collezione', id=2) }}">LEVISSIMA</a>
+                            <a href="{{ url_for('main.collezione', id=2) }}">LAST</a>
+                        </div>
+                    </div>
+
+                    <!-- ESSENTIAL -->
+                    <div class="img-col" onmouseenter="showDesc('essential')" onmouseleave="showDesc('default')">
+                        <a href="{{ url_for('main.collezione', id=3) }}" class="main-link">
+                            <img src="{{ url_for('static', filename='assets/img/Collezioni/essential.jpg') }}" alt="Essential Collection">
+                        </a>
+                        <span class="collection-title">ESSENTIAL</span>
+                        <div class="sub-collections">
+                            <a href="{{ url_for('main.collezione', id=3) }}">FLAT</a>
+                            <a href="{{ url_for('main.collezione', id=3) }}">NEXT</a>
+                        </div>
+                    </div>
+
                 </div>
-                {% else %}
-                <h3 class="text-center mt-5">Nessuna collezione disponibile al momento.</h3>
-                {% endfor %}
+                <!-- /images-grid -->
+
+                <!-- DESCRIPTION PANEL -->
+                <div class="collections-menu">
+                    <div class="description visible" id="desc-default">
+                        <h2>LE NOSTRE<br>COLLEZIONI</h2>
+                        <p>Scoprite le nostre collezioni di porte, ognuna con un design unico e materiali di alta qualità. Dalla modernità alla tradizione, ogni porta è un'opera d'arte che arricchirà il vostro spazio.</p>
+                    </div>
+                    <div class="description" id="desc-classic">
+                        <h2>CLASSIC</h2>
+                        <p>Porte eleganti con lavorazioni tradizionali, essenze pregiate e dettagli artigianali che valorizzano ambienti raffinati e senza tempo.</p>
+                    </div>
+                    <div class="description" id="desc-contemporary">
+                        <h2>CONTEMPORARY</h2>
+                        <p>Linee pulite, materiali moderni e finiture minimal pensate per ambienti attuali, luminosi ed essenziali.</p>
+                    </div>
+                    <div class="description" id="desc-essential">
+                        <h2>ESSENTIAL</h2>
+                        <p>The charm of natural wood and textured surfaces for warm, authentic interiors full of character.</p>
+                    </div>
+                </div>
+
             </div>
+            <!-- /collections-grid -->
         </section>
     </main>
-    {% include 'swiper.html' %}
-    {% include 'footer.html' %}
+
+    {% include 'swiper.html' %} {% include 'footer.html' %}
 </body>
 
 </html>
