@@ -14,3 +14,6 @@ env/
 # --- FILE TEMPORANEI DI PYTHON ---
 __pycache__/
 *.pyc
+
+# --- seed.py ---
+Server/seed.py

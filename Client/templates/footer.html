@@ -59,6 +59,10 @@
                         <input type="email" name="Email" required>
                         <label for="Email">Email</label>
                     </div>
+                    <div class="formbox-checkbox">
+                        <input type="checkbox" name="Consenso" required>
+                        <label for="Consenso">Acconsento al trattamento dei miei dati personali</label>
+                    </div>
                     <button type="submit">Rimaniamo in contatto</button>
                 </form>
             </div>
@@ -66,7 +70,8 @@
         <div class="mt-5 copyright">
             <p class="text-center mt-3">&copy; 2026 Poliwood snc di Negro Stefania & C. - Via Bracco, 2 - 12060 BELVEDERE LANGHE (Cn) - C.F./P.Iva 03389190046 Tel. 0173 797050 - mail: poliwood@poliwoodporte.com</p>
             <p class="text-center mt-3">
-                <a>Informativa Privacy</a> -&nbsp;
+                <a>Informativa Privacy</a>&nbsp;-&nbsp;
+                <a>Cookie Policy</a>&nbsp;-&nbsp;
                 <a href="{{ url_for('auth.login') }}"><span style="font-size: 15px;"><i
                             class="bi bi-lock-fill"></i></span>&nbsp;Area
                     riservata</a>
